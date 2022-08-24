@@ -21,12 +21,20 @@ steps:
 #   args: ['run', 'test:unit']
 
 #build    
-- name: 'gcr.io/cloud-builders/npm:node-16.10'
-  args: ['run', 'build']
+# - name: 'gcr.io/cloud-builders/npm:node-16.10'
+#   args: ['run', 'build']
+
+- name: node:16.10
+  entrypoint: npm
+  args: ['run', 'build', '--prod']
 
 #deploy
 - name: 'gcr.io/$PROJECT_ID/firebase'
   args: ['deploy'] 
+
+# - name: node:16.10
+#   entrypoint: npm
+#   args: ['app', 'deploy', '--version=']
 
 # - name: 'gcr.io/cloud-builders/npm'
 #   args: ['run', 'deploy']    
