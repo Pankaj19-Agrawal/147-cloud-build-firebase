@@ -35,7 +35,7 @@ steps:
 #   args: ['deploy']
 
 - name: 'gcr.io/cloud-builders/npm'
-  args: ['deploy', '--verbosity=demo']
+  args: ['run', 'deploy', '--verbosity=demo']
 
 # - name: 'gcr.io/cloud-builders/npm'
 #   args: ['run', 'deploy'] 
