@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "firebase deploy --debug --token 1//01KaeuLlsZhZdCgYIARAAGAESNwF-L9Irr8J_iVbG2aNQP6IoKYGks0g7n-UpvCGipzm3hhqhumciYN6sdlBZkDuO1fh0joYzUzI --only hosting"
+    "deploy": "firebase deploy --debug --token \"1//01KaeuLlsZhZdCgYIARAAGAESNwF-L9Irr8J_iVbG2aNQP6IoKYGks0g7n-UpvCGipzm3hhqhumciYN6sdlBZkDuO1fh0joYzUzI\" --only hosting"
   },
   "private": true,
   "dependencies": {
