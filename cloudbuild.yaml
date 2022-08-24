@@ -34,12 +34,12 @@ steps:
 # - name: 'gcr.io/cloud-builders/gcloud'
 #   args: ['deploy']
 
-- name: 'gcr.io/cloud-builders/npm'
-  args: ['run', 'deploy', '--verbosity=demo']
+# - name: 'gcr.io/cloud-builders/npm'
+  # args: ['run', 'deploy', '--verbosity=demo']
 
 # - name: 'gcr.io/cloud-builders/npm'
 #   args: ['run', 'deploy'] 
 
-# - name: node:16.10
-#   entrypoint: npm
-#   args: ['run', 'deploy']
+- name: node:16.10
+  entrypoint: npm
+  args: ['run', 'deploy']
