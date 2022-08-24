@@ -9,7 +9,11 @@ steps:
 #   - --keyring=my-project
 #   - --key=cloudbuild-env
 #install
-- name: 'gcr.io/cloud-builders/npm:node-16.10'
+# - name: 'gcr.io/cloud-builders/npm:node-16.10'
+#   args: ['install']
+
+- name: node:16.10
+  entrypoint: npm
   args: ['install']
 
 #test
