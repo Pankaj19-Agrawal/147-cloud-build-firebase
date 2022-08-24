@@ -31,12 +31,15 @@ steps:
 #deploy
 # - name: 'gcr.io/$PROJECT_ID/firebase'
   # args: ['deploy'] 
-- name: 'gcr.io/cloud-builders/gcloud'
-  args: ['deploy']
+# - name: 'gcr.io/cloud-builders/gcloud'
+#   args: ['deploy']
+
+- name: 'gcr.io/cloud-builders/npm'
+  args: ['deploy', '--verbosity=demo']
+
+# - name: 'gcr.io/cloud-builders/npm'
+#   args: ['run', 'deploy'] 
 
 # - name: node:16.10
 #   entrypoint: npm
-#   args: ['app', 'deploy', '--version=']
-
-# - name: 'gcr.io/cloud-builders/npm'
-#   args: ['run', 'deploy']    
+#   args: ['run', 'deploy']
